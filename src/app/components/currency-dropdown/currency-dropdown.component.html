@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button type="button" class="dropdown-toggle">
+      USD
+    </button>
+    <div class="dropdown-menu">
+      <button type="button" class="dropdown-item" *ngFor="let currency of currencys" (click)="onItemClick($event, currency)">{{currency.symbolLeft}}{{currency.code}}{{currency.symbolRight}}</button>
+      
+    </div>
+  </div>
+

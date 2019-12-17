@@ -1,0 +1,164 @@
+<app-header-one></app-header-one>
+<app-header-sticky></app-header-sticky>
+<app-header-mobile></app-header-mobile>
+
+
+<!-- Shop Page One content -->
+<div class="container-fuild">
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Shop</li>
+            </ol>
+        </div>
+      </nav>
+  </div> 
+  <section class="pro-content shop-content shop-special">
+     
+      <div class="container">
+          <div class="row">
+              <div class="pro-heading-title">
+                  <h1>
+                      Shop Page
+                  </h1>
+                </div>
+          </div>
+        <div class="products-area">
+            <div class="top-bar">
+                <div class="row">
+                   <div class="col-12 col-lg-12">
+                       <div class="row align-items-center">
+                           <div class="col-12 col-lg-2">
+                                 <div class="block">
+                                     <label>Display</label>
+                                     <div class="buttons">
+                                         <a href="javascript:void(0);" id="grid_4column" class="fas fa-th-large active"></a>
+                                         <a href="javascript:void(0);" id="list_4column" class="fas fa-list"></a>
+                                     </div>
+                                 </div>
+                           </div> 
+   
+                           <div class="col-12 col-lg-6">
+                               <form class="form-inline justify-content-center">
+                                   <div class="form-group ">
+                                       <label>Category</label>
+                                       <div class="select-control">
+                                         <select class="form-control ">
+                                             <option value="1">Necklace</option>
+                                       
+                                           <option value="2">Earrings</option>
+                                           <option value="3">Crowns</option>
+                                           <option value="4">Rings</option>
+                                         </select>
+                                       </div>
+                                     
+                                   </div>
+                                 
+                                   
+                                   <div class="form-group ">
+                                       <label>Price</label>
+                                       <div class="select-control">
+                                       <select class="form-control ">
+                                           
+                                           <option value="1">$1001-$2500</option>
+                                           <option value="2">$501-$1000</option>
+                                           <option value="3">0-$500</option>
+                                         </select>
+                                       </div>
+                                   </div>
+                                   <div class="form-group ">
+                                       <label>Size</label>
+                                       <div class="select-control">
+                                       <select class="form-control ">
+                                           
+                                          
+                                           <option value="1">Medium</option>
+                                           <option value="2">Large</option>
+                                           <option value="3">Small</option>
+                                         </select>
+                                       </div>
+                                   </div>
+                                   
+                                 </form>
+                           </div> 
+                           <div class="col-12 col-lg-4">
+                               <form class="form-inline justify-content-end">
+                                 
+                                 <div class="form-group">
+                                     <label>Sort by</label> 
+                                     <div class="select-control">
+                                     <select class="form-control ">
+                                        
+                                         <option selected>Popular</option>
+                                         <option  value="1">Newest</option>
+                                         <option value="2">Offers</option>
+                                         <option value="3">Old</option>
+                                       </select>
+                                       </div>
+                                 </div>
+                                 
+                                 <div class="form-group">
+                                     <label>Items</label> 
+                                     <div class="select-control">
+                                     <select class="form-control ">
+                                         <option selected>08</option>
+                                         <option value="1">20</option>
+                                         <option value="2">16</option>
+                                         <option value="3">12</option>
+                                         <option value="4">08</option>
+                                         <option value="5">04</option>
+                                       </select>
+                                       </div>
+                                    
+                                 </div>
+                                 
+                                 
+                                 
+                                
+                               </form>
+                           </div>  
+                       </div>
+                     
+                   </div>
+                </div>
+              </div>  
+         <div class="row">                          
+           <div id="swap" class="col-12 col-sm-12">
+              <div class="row">                         
+                  
+
+                  <div class="col-12 col-sm-6  col-lg-3" *ngFor="let product of products">
+                      
+                    <app-product-card  [data]="product"></app-product-card>
+                    
+                  </div>
+                 
+                </div>
+           </div>                                    
+          </div>
+        </div>
+        <div class="pagination justify-content-between ">
+                        
+            <label  class="col-form-label">Showing 1&ndash;<span class="showing_record">1</span>&nbsp;of&nbsp;<span class="showing_total_record">23</span>&nbsp;results.</label>                                          
+       
+        <div class="col-12 col-sm-6">
+          <ol class="loader-page">
+            <li class="loader-page-item "><a href="#">  
+              <i class="fa fa-angle-double-left " style="font-size:12px"></i></a>
+            </li>
+            <li  class="loader-page-item "><a href="#">1</a></li>
+            <li  class="loader-page-item "><a href="#">2</a></li>
+            <li  class="loader-page-item "><a href="#">3</a></li>
+            <li  class="loader-page-item "><a href="#">4</a></li>
+            <li  class="loader-page-item "><a href="#"> 
+              <i class="fa fa-angle-double-right " style="font-size:12px"></i></a>
+            </li>
+          </ol>
+        </div>
+        </div>
+      </div>
+    </section>
+
+<app-footer-mobile></app-footer-mobile>
+<app-footer-one></app-footer-one>

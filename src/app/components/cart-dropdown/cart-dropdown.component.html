@@ -1,0 +1,31 @@
+<button class="btn dropdown-toggle" type="button" id="headerOneCartButton"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" > 
+    <i class="fas fa-shopping-cart"></i>
+    <span class="badge badge-secondary">{{cartCount}}</span>
+</button> 
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="headerOneCartButton">
+    <ul class="shopping-cart-items">
+      <li *ngFor="let data of productAddedToCart;">
+        <div class="item-thumb">
+          
+          <div class="image">
+            <img class="img-fluid" src="assets/images/product_images/product_image_02.jpg" alt="Product Image">
+          </div>
+        </div>
+        <div class="item-detail">
+            <h2>{{data.name}}</h2>
+            <div class="item-s">{{data.quantity}} x {{data.price}} <i class="fas fa-trash" (click)="removeProduct(data)"></i></div>
+        </div>
+      </li>
+      
+      <li>
+          <span class="item-summary">Total&nbsp;:&nbsp;<span>{{productTotal}}</span>
+          </span>
+      </li>
+      <li>
+          <button class="btn btn-link btn-block" [routerLink]="'/cart-one'">View Cart</button>
+          <button class="btn btn-secondary btn-block  swipe-to-top" [routerLink]="'/checkout'">Checkout</button>
+      </li>
+    </ul>
+    
+  
+</div>
