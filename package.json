@@ -23,7 +23,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ngx-countdown": "^8.0.3",
     "ngx-slick": "^0.2.1",
     "ngx-slick-carousel": "^0.4.6",
